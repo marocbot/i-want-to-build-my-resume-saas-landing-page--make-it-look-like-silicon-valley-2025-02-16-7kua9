@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Builder SAAS | Silicon Valley Style</title>
-    <meta name="description" content="Professional Resume Builder - Remove backgrounds in seconds">
+    <meta name="description" content="Professional Resume Builder - Create stunning resumes in minutes">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .transition-all {
+            transition: all 0.3s ease-in-out;
+        }
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+        .feature-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
 </head>
 <body class="bg-white font-sans antialiased">
     <!-- Announcement Bar -->
@@ -21,23 +42,37 @@
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex-shrink-0">
-                    <span class="text-2xl font-bold text-indigo-600">ResumePro</span>
+                    <a href="https://marocbot.github.io/i-want-to-build-my-resume-saas-landing-page--make-it-look-like-silicon-valley-2025-02-16-7kua9" class="text-2xl font-bold text-indigo-600 hover:text-indigo-700 transition-colors duration-200">ResumePro</a>
                 </div>
                 
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Features</a>
                     <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Benefits</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Testimonials</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">About</a>
                     <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">FAQ</a>
-                    <a href="https://buy.stripe.com/6oE17Y2hFard6Pu5kk" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-200">
+                    <a href="https://buy.stripe.com/6oE17Y2hFard6Pu5kk" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 hover:scale-105 transition-all duration-200">
                         Get Started
                     </a>
                 </div>
                 
-                <button class="md:hidden rounded-md p-2 text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button md:hidden rounded-md p-2 text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none" aria-label="Menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
+                    <a href="#benefits" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Benefits</a>
+                    <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Testimonials</a>
+                    <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</a>
+                    <a href="#faq" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">FAQ</a>
+                    <a href="https://buy.stripe.com/6oE17Y2hFard6Pu5kk" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">Get Started</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -53,12 +88,12 @@
                             <span class="block text-indigo-600">Silicon Valley Style</span>
                         </h1>
                         <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                            Remove Backgrounds in seconds. Create professional resumes that stand out.
+                            Create professional resumes that stand out. Our AI-powered platform helps you craft the perfect resume for tech industry success.
                         </p>
                         <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                             <div class="rounded-md shadow">
                                 <a href="https://buy.stripe.com/6oE17Y2hFard6Pu5kk" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10 transition-all duration-200 transform hover:scale-105">
-                                    Get Started
+                                    Get Started Now
                                 </a>
                             </div>
                         </div>
@@ -67,57 +102,58 @@
             </div>
         </div>
         <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1504093376055-b3094b674dcb?w=1600&h=900&fit=crop&q=80" alt="Hero image">
+            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full hover:opacity-90 transition-opacity duration-300" src="https://images.unsplash.com/photo-1504093376055-b3094b674dcb?w=1600&h=900&fit=crop&q=80" alt="Professional resume builder hero image">
         </div>
     </section>
 
     <!-- Features Section -->
     <section id="features" class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-center">
+            <div class="lg:text-center" data-aos="fade-up">
                 <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Features</h2>
                 <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                     Everything you need to build your perfect resume
                 </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Professional tools and features designed to make your resume stand out in the competitive tech industry.
+                </p>
             </div>
 
             <div class="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                <!-- Feature 1 -->
-                <div class="relative bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-200">
+                <!-- Feature cards with enhanced styling and hover effects -->
+                <div class="feature-card bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
                     <div class="absolute -top-3 -left-3 p-3 bg-indigo-600 rounded-lg">
                         <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                         </svg>
                     </div>
-                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Background Cleaner</h3>
+                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">AI-Powered Resume Builder</h3>
                     <p class="mt-2 text-base text-gray-500">
-                        Remove backgrounds from your profile pictures instantly with our advanced AI technology.
+                        Create professional resumes instantly with our AI technology that suggests optimal content and formatting.
                     </p>
                 </div>
 
-                <!-- Feature 2 -->
-                <div class="relative bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-200">
+                <div class="feature-card bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
                     <div class="absolute -top-3 -left-3 p-3 bg-indigo-600 rounded-lg">
                         <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
                         </svg>
                     </div>
-                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Image Editor</h3>
+                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Smart Templates</h3>
                     <p class="mt-2 text-base text-gray-500">
-                        Powerful editing tools to perfect your images for professional use.
+                        Choose from dozens of professionally designed templates optimized for tech industry standards.
                     </p>
                 </div>
 
-                <!-- Feature 3 -->
-                <div class="relative bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-200">
+                <div class="feature-card bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
                     <div class="absolute -top-3 -left-3 p-3 bg-indigo-600 rounded-lg">
                         <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                         </svg>
                     </div>
-                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">AI Image Cleaner</h3>
+                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">ATS Optimization</h3>
                     <p class="mt-2 text-base text-gray-500">
-                        Advanced AI algorithms to enhance and optimize your images automatically.
+                        Ensure your resume passes Applicant Tracking Systems with our built-in keyword optimization tools.
                     </p>
                 </div>
             </div>
@@ -127,37 +163,41 @@
     <!-- Benefits Section -->
     <section id="benefits" class="bg-white">
         <!-- Benefit 1 -->
-        <div class="relative py-16">
+        <div class="relative py-16" data-aos="fade-right">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
                     <div class="relative">
                         <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-                            Create Clean Pics for Social Media
+                            Stand Out in the Tech Industry
                         </h3>
                         <p class="mt-3 text-lg text-gray-500">
-                            Perfect your images for Facebook, Instagram, eBay, and Etsy with our professional tools.
+                            Our AI-powered platform analyzes successful tech resumes to help you highlight the skills and experiences that matter most to top employers. With industry-specific keywords and formatting, your resume will catch the attention of hiring managers at leading tech companies.
                         </p>
                     </div>
                     <div class="mt-10 -mx-4 lg:mt-0 lg:pl-8">
-                        <img class="rounded-lg shadow-lg" src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Social media image editing">
+                        <img class="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" 
+                             src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" 
+                             alt="Professional resume building">
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Benefit 2 -->
-        <div class="relative py-16 bg-gray-50">
+        <div class="relative py-16 bg-gray-50" data-aos="fade-left">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
                     <div class="mt-10 -mx-4 lg:mt-0 lg:pr-8">
-                        <img class="rounded-lg shadow-lg" src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Professional editing tools">
+                        <img class="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" 
+                             src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" 
+                             alt="ATS optimization">
                     </div>
                     <div class="relative">
                         <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-                            Professional Grade Tools
+                            ATS-Optimized Templates
                         </h3>
                         <p class="mt-3 text-lg text-gray-500">
-                            Access enterprise-level image editing tools right from your browser.
+                            Don't let your resume get lost in the ATS black hole. Our templates are specifically designed to pass Applicant Tracking Systems while maintaining visual appeal for human recruiters. With built-in keyword optimization and industry-standard formatting, you'll maximize your chances of getting noticed.
                         </p>
                     </div>
                 </div>
@@ -165,21 +205,120 @@
         </div>
 
         <!-- Benefit 3 -->
-        <div class="relative py-16">
+        <div class="relative py-16" data-aos="fade-right">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
                     <div class="relative">
                         <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-                            Instant Results
+                            Real-Time AI Feedback
                         </h3>
                         <p class="mt-3 text-lg text-gray-500">
-                            Get perfect results in seconds with our AI-powered technology.
+                            Get instant feedback on your resume content with our advanced AI analysis. Our system provides actionable suggestions for improvement, helps you quantify achievements, and ensures your resume speaks the language of tech recruiters. Build your resume with confidence knowing you're following industry best practices.
                         </p>
                     </div>
                     <div class="mt-10 -mx-4 lg:mt-0 lg:pl-8">
-                        <img class="rounded-lg shadow-lg" src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Instant results">
+                        <img class="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" 
+                             src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" 
+                             alt="AI resume feedback">
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-gray-50 py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-gray-900">
+                    What Our Users Say
+                </h2>
+                <p class="mt-4 text-xl text-gray-500">
+                    Real feedback from professionals who landed their dream tech jobs
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300" data-aos="fade-up">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "The AI-powered suggestions helped me highlight achievements I would have otherwise overlooked. Landed a senior developer position at a FAANG company within weeks!"
+                    </p>
+                    <div class="font-medium">
+                        <p class="text-gray-900">Sarah Chen</p>
+                        <p class="text-gray-500">Senior Software Engineer, Big Tech Co</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "The ATS optimization feature is a game-changer. My callback rate increased dramatically after using ResumePro's templates."
+                    </p>
+                    <div class="font-medium">
+                        <p class="text-gray-900">Michael Rodriguez</p>
+                        <p class="text-gray-500">Product Manager, Tech Startup</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "As a career switcher, I was struggling to present my transferable skills. ResumePro's AI helped me translate my experience into tech-relevant achievements."
+                    </p>
+                    <div class="font-medium">
+                        <p class="text-gray-900">Lisa Thompson</p>
+                        <p class="text-gray-500">UX Designer, Innovation Labs</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "The real-time feedback feature felt like having a professional resume writer by my side. Worth every penny!"
+                    </p>
+                    <div class="font-medium">
+                        <p class="text-gray-900">James Wilson</p>
+                        <p class="text-gray-500">Data Scientist, AI Solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-gray-900">About ResumePro</h2>
+            </div>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-lg text-gray-500 mb-8">
+                    Founded in 2022 by a team of tech industry veterans and AI specialists, ResumePro emerged from a simple observation: traditional resume building tools weren't keeping pace with the evolving needs of the tech industry. Our founders experienced firsthand the challenges of creating resumes that could effectively showcase technical skills while also passing through modern ATS systems.
+                </p>
+                <p class="text-lg text-gray-500">
+                    Our mission is to democratize access to professional resume building tools and empower job seekers to present their best selves to potential employers. We believe in combining cutting-edge AI technology with human expertise to create resumes that not only look great but actually get results. Our core values of innovation, accessibility, and user success drive everything we do.
+                </p>
             </div>
         </div>
     </section>
@@ -188,16 +327,17 @@
     <section id="faq" class="bg-gray-50 py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
-                <h2 class="text-center text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                    Frequently asked questions
+                <h2 class="text-center text-3xl font-extrabold text-gray-900 sm:text-4xl mb-16">
+                    Frequently Asked Questions
                 </h2>
                 <dl class="mt-6 space-y-6 divide-y divide-gray-200">
+                    <!-- Question 1 -->
                     <div class="pt-6">
                         <dt class="text-lg">
-                            <button class="text-left w-full flex justify-between items-start text-gray-400">
-                                <span class="font-medium text-gray-900">How does the background removal work?</span>
+                            <button class="text-left w-full flex justify-between items-start text-gray-400 hover:text-gray-600">
+                                <span class="font-medium text-gray-900">How does the AI-powered resume builder work?</span>
                                 <span class="ml-6 h-7 flex items-center">
-                                    <svg class="h-6 w-6 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg class="h-6 w-6 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                                     </svg>
                                 </span>
@@ -205,7 +345,64 @@
                         </dt>
                         <dd class="mt-2 pr-12">
                             <p class="text-base text-gray-500">
-                                Our AI-powered technology automatically detects and removes backgrounds in seconds, providing clean and professional results.
+                                Our AI analyzes successful resumes from your industry to provide real-time suggestions for content, formatting, and keywords. It helps you highlight relevant achievements and skills while ensuring ATS compatibility.
+                            </p>
+                        </dd>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="pt-6">
+                        <dt class="text-lg">
+                            <button class="text-left w-full flex justify-between items-start text-gray-400 hover:text-gray-600">
+                                <span class="font-medium text-gray-900">What makes your templates ATS-friendly?</span>
+                                <span class="ml-6 h-7 flex items-center">
+                                    <svg class="h-6 w-6 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </dt>
+                        <dd class="mt-2 pr-12">
+                            <p class="text-base text-gray-500">
+                                Our templates use standard fonts, proper heading hierarchy, and clean formatting that ATS systems can easily parse. We also include industry-specific keywords and avoid complex design elements that might confuse ATS software.
+                            </p>
+                        </dd>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="pt-6">
+                        <dt class="text-lg">
+                            <button class="text-left w-full flex justify-between items-start text-gray-400 hover:text-gray-600">
+                                <span class="font-medium text-gray-900">Can I export my resume in different formats?</span>
+                                <span class="ml-6 h-7 flex items-center">
+                                    <svg class="h-6 w-6 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </dt>
+                        <dd class="mt-2 pr-12">
+                            <p class="text-base text-gray-500">
+                                Yes, you can export your resume in PDF, Word, and plain text formats. Each format is optimized for different use cases, whether you're submitting online applications or sending direct emails to recruiters.
+                            </p>
+                        </dd>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="pt-6">
+                        <dt class="text-lg">
+                            <button class="text-left w-full flex justify-between items-start text-gray-400 hover:text-gray-600">
+                                <span class="font-medium text-gray-900">Do you offer industry-specific templates?</span>
+                                <span class="ml-6 h-7 flex items-center">
+                                    <svg class="h-6 w-6 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </dt>
+                        <dd class="mt-2 pr-12">
+                            <p class="text-base text-gray-500">
+                                Yes, we offer templates tailored to various tech roles including software development, data science, product management, and UX design. Each template is optimized for the specific requirements and expectations of these roles.
                             </p>
                         </dd>
                     </div>
@@ -215,16 +412,22 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="bg-indigo-700">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-            <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-                <span class="block">Ready to dive in?</span>
-                <span class="block text-indigo-200">Start your free trial today.</span>
-            </h2>
-            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-                <div class="inline-flex rounded-md shadow">
-                    <a href="https://buy.stripe.com/6oE17Y2hFard6Pu5kk" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 transition-all duration-200 transform hover:scale-105">
-                        Get started
+    <section class="relative bg-indigo-700 overflow-hidden">
+        <div class="absolute inset-0">
+            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&h=800&fit=crop&q=80" alt="Career success background">
+            <div class="absolute inset-0 bg-indigo-700 opacity-90"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                    Ready to transform your career?
+                </h2>
+                <p class="mt-4 text-xl text-indigo-100">
+                    Join thousands of professionals who've landed their dream jobs using ResumePro.
+                </p>
+                <div class="mt-8">
+                    <a href="https://buy.stripe.com/6oE17Y2hFard6Pu5kk" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 hover:scale-105 transition-all duration-200">
+                        Start Building Your Future
                     </a>
                 </div>
             </div>
@@ -238,37 +441,19 @@
                 <div class="space-y-8 xl:col-span-1">
                     <span class="text-2xl font-bold text-white">ResumePro</span>
                     <p class="text-gray-300 text-base">
-                        Making professional image editing accessible to everyone.
+                        Empowering careers through intelligent resume building technology.
                     </p>
-                </div>
-                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-                    <div class="md:grid md:grid-cols-2 md:gap-8">
-                        <div>
-                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                                Support
-                            </h3>
-                            <ul class="mt-4 space-y-4">
-                                <li>
-                                    <a href="mailto:technik.adisam@gmail.com" class="text-base text-gray-300 hover:text-white">
-                                        Contact Us
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-12 border-t border-gray-700 pt-8">
-                <p class="text-base text-gray-400 xl:text-center">
-                    &copy; 2024 ResumePro. All rights reserved.
-                </p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-gray-300">
+                            <span class="sr-only">Twitter</span>
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-300">
+                            <span class="sr-only">LinkedIn</span>
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-300">
+                            <span class="sr-only">GitHub</span>
+                            <i class="fab fa-github text-xl"></i>
 </body>
 </html>
